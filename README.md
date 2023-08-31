@@ -12,3 +12,9 @@ This was a simple machine learning project I did for use with the Iris Petals/Se
 
 <br/>DESCRIPTION:
 A basic neural network for classifying different Iris species/classes
+
+<h4>Weather Dashboard (working on)</h4>
+First simple full-stack experimentation
+
+<br/>DESCRIPTION:
+A weather dashboard for getting the weather in a certain location. Simple project with Javascript, python, css, and HTML.
