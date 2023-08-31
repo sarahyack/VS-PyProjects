@@ -16,5 +16,5 @@ A basic neural network for classifying different Iris species/classes
 <h4>Weather Dashboard (working on)</h4>
 First simple full-stack experimentation
 
-DESCRIPTION:
+<br/>DESCRIPTION:
 A weather dashboard for getting the weather in a certain location. Simple project with Javascript, python, css, and HTML.
