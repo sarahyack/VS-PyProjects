@@ -87,5 +87,5 @@ print(model.summary())
 
 print("First five predicted labels: ", y_pred[:5])
 print("First five true labels: ", y_test[:5])
-print("Test Accuracy: ", accuracy_score(y_test, y_pred))
+print("Test Accuracy: ", (accuracy_score(y_test, y_pred)) * 100)
 print(num_errors)
