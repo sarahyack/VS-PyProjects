@@ -1,4 +1,12 @@
-header {
+* {
+    margin: 20px;
+    padding: 20px;
+}
+body {
+    border: 20px solid black;
+    background: linear-gradient(-45deg,#ff9933 0%, #fff2e6 100%);
+}
+.header {
     text-align: center;
     background-color: aquamarine;
     font-size: xx-large;
@@ -7,4 +15,17 @@ h4 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-style: oblique;
     text-align: center;
+}
+.container {
+    text-align: center;
+}
+.styled {
+    color: blue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    font-size: 25px;
 }
