@@ -3,6 +3,8 @@ import numpy as np
 from PIL import Image
 import pickle
 
+from src.helper.config import folder1_path, folder2_path, folder3_path
+
 def load_images(folder_path, label):
     images = []
     labels = []
@@ -16,11 +18,11 @@ def load_images(folder_path, label):
     return images, labels
 
 # Folder paths and labels
-folder1 = "C:\\Users\\Sarah\\Documents\\My Projects\\Coding\\ML Testing\\MLFA Project\\Training\\Not Birds"
+folder1 = folder1_path
 label1 = 0
-folder2 = "C:\\Users\\Sarah\\Documents\\My Projects\\Coding\\ML Testing\\MLFA Project\\Training\\Birds"
+folder2 = folder2_path
 label2 = 1
-folder3 = "C:\\Users\\Sarah\\Documents\\My Projects\\Coding\\ML Testing\\MLFA Project\\Training\\Macaws"
+folder3 = folder3_path
 label3 = 2
 
 # Load and label images from all three folders
