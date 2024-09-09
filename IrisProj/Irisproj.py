@@ -19,6 +19,7 @@
 				Added count of errors.
 """
 import os
+
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
 import numpy as np
@@ -33,8 +34,9 @@ from tensorflow.keras.losses import SparseCategoricalCrossentropy
 from tensorflow.keras.activations import linear, relu, sigmoid, softmax
 from sklearn.preprocessing import LabelEncoder
 from sklearn.metrics import accuracy_score
+
 with open(r"C:\Users\Sarah\Documents\My Projects\Coding\ML Testing\Iris Solo Project\iris\iris.data", "r") as file:
-	data = pd.read_csv(file, header=None)
+    data = pd.read_csv(file, header=None)
 
 data.columns = ['SepalLength', 'SepalWidth', 'PetalLength', 'PetalWidth', 'Class']
 
@@ -57,26 +59,26 @@ X_test, X_cv, y_test, y_cv = train_test_split(X_, y_, test_size=0.5)
 # print(f"the shape of the test set (target) is: {y_test.shape}")
 
 model = Sequential([
-	# Dense(50, activation='relu'),
-	# Dropout(0.2),
-	# Dense(35, activation='relu'),
-	# Dense(25, activation='relu'),
-	Dense(15, activation='relu'),
-	Dense(10, activation='relu'),
-	Dense(3, activation='softmax')
-], name = 'my_model')
+    # Dense(50, activation='relu'),
+    # Dropout(0.2),
+    # Dense(35, activation='relu'),
+    # Dense(25, activation='relu'),
+    Dense(15, activation='relu'),
+    Dense(10, activation='relu'),
+    Dense(3, activation='softmax')
+], name='my_model')
 
-model.compile(loss = SparseCategoricalCrossentropy(), optimizer = tf.keras.optimizers.Adam())
-#Got rid of learning_rate=0.009
+model.compile(loss=SparseCategoricalCrossentropy(), optimizer=tf.keras.optimizers.Adam())
+# Got rid of learning_rate=0.009
 
 history = model.fit(
-	X_train, y_train,
-	epochs=200,
-	validation_data=(X_cv, y_cv)
+    X_train, y_train,
+    epochs=200,
+    validation_data=(X_cv, y_cv)
 )
 print("Done!\n")
 
-#Intial plotting of cost
+# Intial plotting of cost
 # plt.figure(figsize=(15, 5))
 # plt.plot(history.history['loss'], label='Training Loss')
 # plt.plot(history.history['val_loss'], label='Validation Loss')
